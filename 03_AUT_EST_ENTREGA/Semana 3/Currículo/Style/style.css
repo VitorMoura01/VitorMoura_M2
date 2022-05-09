@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(232, 252, 247);
+}
+
+.container {
+    color:rgb(25, 25, 41);
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 50px auto;
+    max-width: 960px
+}
+
+div h1 {
+    text-align: center;
+}
+
