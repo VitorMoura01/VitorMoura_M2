@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CURRICULO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center">
+    <div class="font">
+      <h1 id="nome"> Vitor Moura de Oliveira</h1>
+      <H2 id="email"> email: vitor.oliveira@sou.inteli.edu.br</H2>
+      <h2 id="cargo"></h2>
+      <p> Tenho 17 anos e sou estudante do curso de Sistemas de Informacao no Instituto de Tecnologia e Lideranca (Inteli). </p>
+      <p> Sempre gostei de expressar a minha criatividade atraves da arte e tecnologia, sendo assim, aprofundei os meus estudos de design e de softwares de criacao, tendo experiencia profissional: </p>
+      <ul>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>After Effects</li>
+        <li>Premiere Pro</li>
+        <li>Maya</li>
+        <li>Substance Painter</li>
+      </ul>
+    </div>
+      <input type="button" value="Adicionar Linha" onclick="add()">
+      <input type="button" value="Info em pelo banco de dados" onclick="json()">
+      <input type="button" value="JQUERY" onclick="jquery()">
+      <br>
+      <div id="linha"></div>
+      <br>
+      <div id="geyson"></div>
+      <img src="assets/Images/Aranha_v03.png" alt="Minha imagem de teste" width="500" height="600">
+      <p> <a href="https://en.wikipedia.org/wiki/Shrek">Melhor filme da historia da humanidade</a> </p>
+  </div>
+</body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    function jquery(){
+      $('#nome').fadeOut("4000").fadeIn("4000")
+    }
+  </script> 
+</html>
