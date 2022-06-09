@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+        <!-- EX 1 -->
+        <div>
+            <h1>Exercicio 1</h1>
+            <input type="number" placeholder="Valor" id="num" class="input"> 
+            <input type="button" value="+" onclick="aumenta()" class="input button">
+            <input type="button" value="-" onclick="diminui()" class="input button">
+            <p id="res">resultado</p>
+        </div>
+
+        <!-- EX 2 -->
+        <div>
+            <h1>Exercicio 2</h1>
+            <input type="text" id="text1" class="input">
+            <input type="text" id="text2" class="input">
+            <input type="button" value="Trocar" onclick="trocar()" class="input button">
+            <p id="res2"></p>
+        </div>
+
+        <!-- EX 3 -->
+        <div>
+            <h1>Exercicio 3</h1>
+            Número de seu celular no formato "(XX)XXXXX-XXXX" <br><br>
+            <input type="text" placeholder="(XX)XXXXX-XXXX" id="cel" class="input">
+            <input type="submit" onclick="validar()" class="input button">
+            <p id="res3"></p>
+        </div>
+
+        <!-- EX 4 -->
+        <div>
+            <h1>Exercicio 4</h1>
+            Quantidade de pessoas e período<br><br>
+            <div>
+                <input type="number" id="pessoas" class="input">
+                <input type="radio" name="radPeriodo" id="diurno" checked>
+                <label>Diurno</label>
+                <input type="radio" name="radPeriodo" id="noturno">
+                <label>Noturno</label>
+                <input type="submit" onclick="verificar()" class="input button">
+            </div>
+            <p id="res4"></p>
+        </div>
+
+        <!-- EX 5 -->
+        <div>
+            <h1> Exercicio 5</h1>
+            Quantidade de alunos <br><br>
+            <div>
+                <input type="number" id="alunos" class="input">
+                <input type="button" value="Adicionar alunos" class="input button" onclick="alunos()"><br><br>
+            </div>
+            <div id="inputs"></div>
+            <br>
+            <div id="res5"></div>
+            <input type="button" value="Calcular medias" class="input button" onclick="medias()"><br><br>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
