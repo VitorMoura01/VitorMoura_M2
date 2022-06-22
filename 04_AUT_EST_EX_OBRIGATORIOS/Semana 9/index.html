@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+        <!-- EX 1 -->
+        <div>
+            <h1>Exercicio 1</h1>
+            <input type="number" placeholder="Valor" id="num" class="input"> 
+            <input type="button" value="Calcular" onclick="calcula()" class="input button">
+            <p id="res">resultado</p>
+        </div>
+
+        <!-- EX 2 -->
+        <div>
+            <h1>Exercicio 2</h1>
+            <input type="text" id="text1" class="input">
+            <input type="button" value="Somar" onclick="somar()" class="input button">
+            <p id="res2"></p>
+        </div>
+
+        <!-- EX 3 -->
+        <div>
+            <h1>Exercicio 3</h1>
+            <input type="text" placeholder="nome 1" id="nom1" class="input">
+            <input type="text" placeholder="nome 2" id="nom2" class="input">
+            <input type="text" placeholder="nome 3" id="nom3" class="input">
+            <input type="submit" value="ordem" onclick="ordem()" class="input button">
+            <p id="res3"></p>
+        </div>
+
+        <!-- EX 4 -->
+        <div>
+            <h1>Exercicio 4</h1>
+            Fibonacci<br><br>
+            <div>
+                <input type="number" id="numeroN" class="input">
+                <input type="submit" onclick="fibonacci()" class="input button">
+            </div>
+            <p id="res4"></p>
+        </div>
+
+        <!-- EX 5 -->
+        <div>
+            <h1> Exercicio 5</h1>
+            Quantidade de alunos <br><br>
+            <div>
+                <input type="number" id="n1" class="input">
+                <input type="number" id="n2" class="input">
+                <input type="button" value="Primos" class="input button" onclick="intervalo()"><br><br>
+            </div>
+            <div id="res5"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
