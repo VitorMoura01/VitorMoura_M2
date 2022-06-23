@@ -78,35 +78,60 @@ function fibonacci(){
 
 //EX 5
 
+// function intervalo(){
+//     res = document.getElementById("res5");
+//     n1 = Number(document.getElementById("n1").value);
+//     n2 = Number(document.getElementById("n2").value);
+//     listaPrimos = [];
+    
+//     for(i=n1; i <= n2; i++){
+//         inter = n1++
+//         console.log(inter)
+//         primo(inter)
+//         if(primo(inter) == true){
+//             listaPrimos.push(inter);
+//         };
+//     };
+    
+//     res.innerText = listaPrimos
+// };
+
+// function primo(inter){
+//     for(i=2; i < inter; i++){
+//         if(inter % i == 0){
+//             return false;
+//         }else{
+//             return true;
+//         };  
+//     }
+// };
+
+// function teste(){
+//     console.log(primo(12))
+
+// }
+
+
 function intervalo(){
     res = document.getElementById("res5");
     n1 = Number(document.getElementById("n1").value);
     n2 = Number(document.getElementById("n2").value);
     listaPrimos = [];
-    
-    for(i=n1; i <= n2; i++){
-        inter = n1++
-        console.log(inter)
-        primo(inter)
-        if(primo(inter) == true){
-            listaPrimos.push(inter);
+
+    for(var i = n1; i< n2; i++){
+        if (numeroPrimo(i)){
+            listaPrimos.push(i);
         };
     };
-    
     res.innerText = listaPrimos
-};
 
-function primo(inter){
-    for(i=2; i < inter; i++){
-        if(inter % i == 0){
-            return false;
-        }else{
-            return true;
-        };  
     }
+    
+function numeroPrimo(numero) {
+    for(var i = 2; i < numero; i++)
+        if(numero % i === 0) {
+            return false
+        };
+        return numero > 1;
 };
 
-function teste(){
-    console.log(primo(12))
-
-}
