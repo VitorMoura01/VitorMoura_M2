@@ -26,6 +26,7 @@ function par(centena){
 
 //EX2
 function somar(){
+    res = document.getElementById("res2");
     valor1 = document.getElementById("text1").value;
     lista1 = valor1.split("");
     soma = 0;
@@ -34,6 +35,7 @@ function somar(){
         soma += Number(lista1[i]);
     };
     console.log(soma);
+    res.innerText = soma;
 };
 
 //EX3
